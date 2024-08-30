@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+    background-color: black;
+}
+
+.bg {
+    width: 100%;
+    height: 644px;
+    background-image: url(data/bg.jpg);
+    background-size: max(1200px, 100vw);
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .box {
+        background-color: black;
+        height: 644px;
+
+        width: 100%;
+        opacity: .44;
+        position: absolute;
+        top: 0;
+    }
+
+}
+
+.nav-bar {
+    margin: auto;
+
+    max-width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+
+
+}
+
+.logo {
+    margin-top: 20px;
+    width: 130px;
+    color: red;
+    position: relative;
+    z-index: 10;
+}
+
+.button {
+    position: relative;
+    z-index: 10;
+}
+
+.red-btn {
+    background-color: red;
+    color: #e2e2e2;
+    font-weight: bolder;
+    padding: 3px 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+
+
+
+}
+
+.normal-btn {
+    color: #e2e2e2;
+    font-weight: bolder;
+    padding: 3px 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: gray;
+
+}
+
+.contant {
+
+    height: calc(100% - 65px);
+    color: #e2e2e2;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*to arange the text in next line*/
+    position: relative;
+    /* to pop out the text*/
+    gap: 6px;
+    text-align: center;
+
+
+}
+
+.contant> :first-child {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.contant> :nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+.contant> :nth-child(3) {
+    /*">" this symbol is determine that these properties are apllied only immediate child of contain*/
+    font-size: 1.1rem;
+    font-weight: 500;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.red-btn-box {
+    background-color: red;
+    color: #e2e2e2;
+    font-weight: bolder;
+    padding: 8px 30px;
+    font-size: 20px;
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.normal-btn-box {
+    color: #e2e2e2;
+    padding: 12px 60px 12px 4px;
+    font-size: 13px;
+    border-radius: 4px;
+    border-color: rgba(249, 244, 244, 0.5);
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+
+.saperation {
+    height: 5px;
+    background-color: gray;
+}
+
+.first {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    /* flex-wrap: wrap; */
+
+
+    .secImg {
+        position: relative;
+    }
+
+    .secImg img {
+        width: 401px;
+        /* height: 30vh; */
+        position: relative;
+        z-index: 10;
+    }
+
+
+    .secImg video {
+        width: 301px;
+        position: absolute;
+        top: 62px;
+        right: 58px;
+        overflow: hidden;
+
+    }
+
+    .box1 {
+        display: flex;
+        padding: 34px 0;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .box1> :first-child {
+        font-size: 48px;
+        font-weight: 900;
+    }
+
+    .box1> :nth-child(2) {
+        font-size: 24px;
+
+
+    }
+}
+
+.last-box {
+    background-color: black;
+    color: white;
+
+    padding: 34px;
+    text-align: center;
+
+}
+
+.FQ:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.FQ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 34px auto;
+    gap: 10px;
+    padding: 20px;
+    background-color: #2d2d2d;
+    font-size: 30px;
+    max-width: 40vw;
+    cursor: pointer;
+}
+.l1{
+    
+    color: rgb(255, 255, 255);
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    /* width: 80vw; */
+
+}
+.lb1{
+    width: 70vw;
+    margin-left: 30px;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .first {
+        flex-wrap: wrap;
+    }
+
+    
+
+    
+
+}
+
+@media (max-width: 700px) { 
+    .secImg video {
+        width: 28px;
+    }
+
+    .secImg img {
+        width: 39px;
+    }
+}
+
+
+ 
+@media screen and (max-width: 1300px) {
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+    
+    .footer-item{
+        align-items: center;
+    }
+    
+
+}
+ 
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
